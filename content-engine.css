@@ -1,0 +1,57 @@
+/* Content-first KYBR marketing experience */
+.human-site .content-engine{padding:105px 0;background:#f1f6f2}
+.human-site .engine-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:32px 0 26px}
+.human-site .engine-steps>div{padding:19px 16px;background:#fff;border:1px solid #dae8e1;border-radius:13px;display:flex;flex-direction:column;min-height:137px}
+.human-site .engine-steps span{font-size:12px;font-weight:900;letter-spacing:.08em;color:#15978c}
+.human-site .engine-steps b{font-size:17px;margin-top:13px;color:#1d3c42}
+.human-site .engine-steps small{color:#687f84;font-size:12px;margin-top:4px}
+.human-site .engine-demo{display:grid;grid-template-columns:.86fr 1.14fr;background:white;border:1px solid #d8e5de;border-radius:21px;overflow:hidden;box-shadow:0 18px 47px #204f4113}
+.human-site .engine-input{padding:36px;background:#fff;display:flex;flex-direction:column;align-items:stretch}
+.human-site .engine-input h3{font-size:32px;margin:12px 0}
+.human-site .engine-input p{color:#647d82;font-size:14px}
+.human-site .engine-label{font-size:12px;font-weight:800;color:#264c53;margin:13px 0 3px;display:block}
+.human-site .engine-input input,.human-site .engine-input select{background:#f8fbfa;border:1px solid #ccdbd7;color:#1b3a42;padding:13px;border-radius:9px;width:100%;min-width:0}
+.human-site .engine-input input[type=file]{font-size:12px}
+.human-site .engine-note{font-size:11px!important;color:#687f84!important;margin:8px 0 19px}
+.human-site .engine-status{font-size:12px!important;color:#387a73!important;margin-top:12px}
+.human-site .engine-results{background:#e9efec;padding:26px;min-width:0}
+.human-site .engine-sample-tag{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:10px;font-weight:900;letter-spacing:.13em;color:#547074;margin-bottom:12px}
+.human-site .engine-sample-tag span{color:#088477;background:#d6f0e7;border-radius:25px;padding:5px 10px;white-space:nowrap}
+.human-site .engine-post{background:white;border-radius:15px;overflow:hidden;box-shadow:0 8px 30px #1e4b4013}
+.human-site .engine-post-brand{display:flex;gap:11px;align-items:center;padding:15px}
+.human-site .engine-avatar{height:35px;width:35px;background:#1a847e;color:white;border-radius:50%;display:grid;place-items:center;font-weight:900;flex:none}
+.human-site .engine-post-brand>div{flex:1;min-width:0}
+.human-site .engine-post-brand strong,.human-site .engine-post-brand small{display:block;overflow-wrap:anywhere}
+.human-site .engine-post-brand strong{font-size:12px;color:#25454a}
+.human-site .engine-post-brand small{color:#889b9a;font-size:10px}
+.human-site .engine-approval{font-size:10px;color:#107d71;background:#ddf5ea;border-radius:20px;padding:5px 8px;text-align:center}
+.human-site .engine-media{width:100%;min-height:275px;display:grid;place-items:center;background:#204c49;overflow:hidden}
+.human-site .engine-media img,.human-site .engine-media video{width:100%;max-height:440px;object-fit:contain;display:block}
+.human-site .engine-placeholder{display:flex;flex-direction:column;justify-content:center;text-align:center;align-items:center;min-height:275px;gap:18px;padding:30px;color:#e6f6ef;background:radial-gradient(circle at 90% 8%,#70b7a268,transparent 48%),#204c49;width:100%}
+.human-site .engine-placeholder span{font-size:11px;letter-spacing:.16em;color:#a7dfd1}
+.human-site .engine-placeholder strong{font-size:clamp(22px,3vw,37px);line-height:1.1;max-width:350px}
+.human-site .engine-placeholder small{font-size:12px;color:#d4ede4}
+.human-site .engine-caption{padding:20px;color:#224049}
+.human-site .engine-caption strong{font-size:14px}
+.human-site .engine-caption p{font-size:13px;margin:8px 0 0;color:#6b7c7d}
+.human-site .engine-calendar{padding:18px 20px;background:white;border:1px solid #dce6df;border-radius:11px;margin-top:12px}
+.human-site .engine-calendar>div{display:grid;grid-template-columns:40px 1fr auto;gap:9px;align-items:center;padding:9px 0;border-bottom:1px solid #edf2ed}
+.human-site .engine-calendar>div:last-child{border-bottom:0}
+.human-site .engine-calendar>div span{font-size:10px;color:#078a81;font-weight:900}
+.human-site .engine-calendar>div strong{font-size:12px;color:#29474e}
+.human-site .engine-calendar>div em{font-style:normal;color:#78918f;font-size:10px}
+.human-site .engine-footnote{margin:16px 0 0;color:#688080;font-size:11px}
+.human-site .onboarding{background:#faf9f5;padding:105px 0}
+.human-site .onboarding-intro{display:grid;grid-template-columns:1.2fr .8fr;align-items:end;gap:60px}
+.human-site .onboarding-intro h2{max-width:750px;margin:10px 0 0}
+.human-site .onboarding-intro p{color:#697f81;font-size:16px}
+.human-site .onboarding-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:44px 0 20px}
+.human-site .onboarding-grid article{padding:29px 22px;background:white;border:1px solid #e0e8e1;border-radius:16px;min-height:245px;box-shadow:0 8px 23px #1a4a3c08}
+.human-site .onboarding-grid article span{font-size:12px;letter-spacing:.12em;color:#0b8f84;font-weight:900}
+.human-site .onboarding-grid article h3{margin:30px 0 12px;font-size:21px}
+.human-site .onboarding-grid article p{font-size:13px;color:#697e80}
+.human-site .onboarding-summary{padding:21px 27px;background:#e8f6ef;border:1px solid #bcded0;border-radius:13px;display:flex;align-items:center;gap:30px}
+.human-site .onboarding-summary strong{color:#13554e;max-width:290px;font-size:16px}
+.human-site .onboarding-summary span{font-size:13px;color:#486a65;flex:1}
+@media(max-width:1000px){.human-site .engine-demo{grid-template-columns:1fr 1fr}.human-site .onboarding-grid{grid-template-columns:repeat(2,1fr)}.human-site .onboarding-intro{gap:30px}}
+@media(max-width:760px){.human-site .content-engine,.human-site .onboarding{padding:75px 0}.human-site .engine-steps{grid-template-columns:repeat(2,1fr)}.human-site .engine-demo,.human-site .onboarding-intro{grid-template-columns:1fr}.human-site .engine-input{padding:23px}.human-site .engine-results{padding:15px}.human-site .engine-media,.human-site .engine-placeholder{min-height:220px}.human-site .onboarding-grid{grid-template-columns:1fr;gap:10px;margin-top:25px}.human-site .onboarding-grid article{min-height:0;padding:22px}.human-site .onboarding-grid article h3{margin:12px 0}.human-site .onboarding-summary{flex-direction:column;align-items:start;gap:9px}.human-site .engine-calendar>div{grid-template-columns:34px 1fr}.human-site .engine-calendar>div em{grid-column:2}}
