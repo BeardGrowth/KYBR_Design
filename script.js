@@ -4,12 +4,12 @@
   menu?.addEventListener('click', () => {
     const open = links.classList.toggle('open');
     menu.setAttribute('aria-expanded', String(open));
-    menu.textContent = open ? '✕' : '☰';
+    menu.textContent = open ? 'Close' : 'Menu';
   });
   links?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
     links.classList.remove('open');
     menu?.setAttribute('aria-expanded', 'false');
-    if (menu) menu.textContent = '☰';
+    if (menu) menu.textContent = 'Menu';
   }));
   const views = {
     network: ['12,846', '27', '3,982', '5.8×'],
