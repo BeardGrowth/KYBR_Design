@@ -38,7 +38,7 @@
     slides.forEach(p=>p.hidden=Number(p.dataset.tourPanel)!==step);
     const h=document.getElementById('tour-heading'),count=document.getElementById('tour-count'),prev=document.getElementById('tour-prev'),next=document.getElementById('tour-next'),progress=document.getElementById('tour-progress-fill');
     if(h)h.textContent=labels[step];if(count)count.textContent='STEP '+(step+1)+' OF 5';if(prev)prev.disabled=step===0;
-    if(next)next.textContent=step===4?'Restart Tour ↺':'Next Step →';if(progress)progress.style.width=((step+1)*20)+'%';
+    if(next)next.textContent=step===4?'Restart Tour':'Next Step';if(progress)progress.style.width=((step+1)*20)+'%';
   };
   tabs.forEach(b=>b.addEventListener('click',()=>showStep(Number(b.dataset.step))));
   document.getElementById('tour-prev')?.addEventListener('click',()=>showStep(step-1));
@@ -60,7 +60,7 @@
     if(name)name.textContent=company.toUpperCase();if(heading)heading.textContent=goal[0];
     const starts={confident:'Meet '+company+'. ',warm:'Your community matters to '+company+'. ',bold:company+' is ready to make an impact. '};
     if(sub)sub.textContent=starts[tone]+goal[1];
-    if(cta)cta.textContent=goal[2]+' ↗';
+    if(cta)cta.textContent=goal[2];
     const accent=brandColor?.value||'#54e7dc';brandPreview.style.setProperty('--brand-accent',accent);
     if(summary)summary.textContent='A '+tone+' '+brandGoal?.selectedOptions[0]?.text.toLowerCase()+' concept for '+company+'.';
   }
