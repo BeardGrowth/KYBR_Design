@@ -1,0 +1,74 @@
+/* Secondary experience pages: light, human-centered KYBR marketing shell */
+:root{--bg:#faf9f6;--white:#17313b;--muted:#687f85;--teal:#12a99d}
+html{scroll-padding-top:85px}
+body{background:#faf9f6;color:#17313b;font-family:"DM Sans",sans-serif}
+body:before,.ambient{display:none!important}
+.site-header{background:#fffc;border-color:#e0e8e2;backdrop-filter:blur(16px)}
+.nav{height:78px}
+.brand{color:#17313b;letter-spacing:.13em}
+.brandmark{background:#133540;color:#a1f2de;box-shadow:none}
+.brand small{color:#5f777c}
+.nav-links>a:not(.btn){color:#38505a}
+.nav-links>a:not(.btn):hover{color:#008b81}
+.nav-cta{background:#153540!important;color:white!important;border-color:#153540!important}
+.menu-toggle{color:#193944;background:white;border:1px solid #d1dfdb}
+.enterprise-hero{padding:95px 0 65px}
+.enterprise-hero h1{color:#14323d}
+.enterprise-hero h1 em,.gradient-text{background:linear-gradient(95deg,#0c9a8b,#2e817c);color:transparent;background-clip:text;-webkit-background-clip:text}
+.enterprise-hero>p:not(.eyebrow):not(.micro){color:#5c727a}
+.eyebrow{color:#087f76}
+.pill{background:#e6f5ef;border-color:#c6e8dd;color:#0c8177}
+.micro,.experience-footnote{color:#70868b}
+.experience-heading h2,.section h2,.tour-rail h2{color:#16333c}
+.experience-heading p:not(.eyebrow),.section-lede,.crosscta p:not(.eyebrow){color:#667c82}
+.mode-label{color:#0c7b75;border-color:#b8e2d9;background:#e6f5ef}
+.demo-chip{color:#67e8d6}
+.btn-primary{background:#1ab6a7;border:1px solid #1ab6a7;color:#082823;box-shadow:0 10px 28px #19a99e24}
+.btn-primary:hover{background:#3ed1c0}
+.btn-outline{background:white;border:1px solid #bdd2cd;color:#183b43}
+.btn-outline:hover{background:#f1f9f5;border-color:#7fc9bb}
+.ex-shell,.tour-stage,.brand-lab,.ex-card,.enterprise-boundary{box-shadow:0 16px 42px #163f4515}
+.ex-shell{background:#0c1526}
+.ex-stage .eyebrow,.ex-shell .eyebrow{color:#66eadb}
+.ex-stage h3,.ex-shell h3{color:#f4f8ff}
+.ex-side button{color:#c5d6e4}
+.ex-card p,.ex-info{color:#c0d0e2}
+.experience-section{padding-top:65px}
+.rollout-grid article{background:#fff;border:1px solid #e1e7e3;box-shadow:0 8px 25px #224e5010}
+.rollout-grid article h3{color:#17313b}
+.rollout-grid article p{color:#627a80}
+.rollout-grid article>span{color:#148d84}
+.enterprise-boundary{background:#fff;border-color:#dee6e3}
+.enterprise-boundary h3{color:#183b44}
+.enterprise-boundary p{color:#62777d}
+.final-gradient{background:#123844;border:1px solid #123844;box-shadow:0 15px 45px #102e4026;color:white}
+.final-gradient h2{color:white}
+.final-gradient .eyebrow{color:#83e5d4}
+.final-gradient p:not(.eyebrow){color:#cbdddd}
+.final-gradient .btn-outline{background:transparent;color:white;border-color:#7aa6a8}
+.final-gradient .btn-outline:hover{background:#235967}
+.crosscta h2{color:#17313b}
+.tour-rail .micro{color:#6c7e86}
+.tour-steps button{background:#fff;border-color:#dce5e2;color:#314b54}
+.tour-steps button.active{background:#e5f8f1;border-color:#63c8b8;color:#173c40}
+.tour-steps button span{color:#078d82}
+.brand-lab{background:white;border-color:#dae6e2}
+.brand-lab h2{color:#193842}
+.brand-lab .section-lede{color:#687d82}
+.lab-fields label{color:#24454e}
+.lab-fields input:not([type=color]),.lab-fields select{background:#f8faf8;border-color:#ceddd7;color:#163942}
+.lab-note{color:#6a7c7c}
+.brand-preview{color:white}
+.brand-preview h3{color:white}
+.brand-preview .preview-company{color:var(--brand-accent)}
+.lab-results{background:#edf8f4;color:#21434d;border-color:#a2d7cd}
+.lab-results h4{color:#193a43}
+.lab-results p{color:#315761}
+.lab-results strong{color:#047c73}
+.status-message{color:#6c8087}
+footer{background:#102f3b;border-color:#102f3b}
+footer .brand{color:white}
+footer .brand small{color:#acccd0}
+footer .footer-inner p,footer .footer-links a{color:#c2d8d9}
+footer .brandmark{background:#6cdac9;color:#123a40}
+@media(max-width:720px){.nav-links{background:#fff;border-color:#dde7e3}.nav-links>a:not(.btn){color:#22444e}.nav-links .btn-outline{background:#143540;color:white;border-color:#143540}.enterprise-hero{padding:65px 0 50px}.experience-section{padding:55px 0}.ex-shell{border-radius:13px}}
