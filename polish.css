@@ -1,0 +1,48 @@
+/* KYBR design refinement — shared across all pages */
+:root{--bg:#080c19;--surface:#121c30;--edge:#30405a;--teal:#62e8dc;--purple:#b995ff;--muted:#aebbce}
+::selection{background:#6654ba;color:white}
+.skip-link{position:fixed;top:-100px;left:16px;background:#6ceadd;color:#08121d;padding:12px 18px;border-radius:8px;z-index:100;font-weight:700}
+.skip-link:focus{top:14px}
+:focus-visible{outline:3px solid #76eee3;outline-offset:4px}
+a,button,select,input,textarea{touch-action:manipulation}
+.btn,.tab,.ex-side-button,.tour-steps button{transition:background .2s ease,border-color .2s ease,box-shadow .2s ease,transform .2s ease}
+.btn{min-height:46px;letter-spacing:.01em;position:relative}
+.btn-primary{background:linear-gradient(112deg,#6ceade,#75d8f1);border:1px solid #a5fff5;box-shadow:0 7px 30px #40d8da26}
+.btn-primary:hover{box-shadow:0 9px 36px #52e4d75a}
+.btn-outline{background:linear-gradient(145deg,#16233a,#0c1524);border:1px solid #4b6682}
+.btn-outline:hover{border-color:#67e9df;background:#192c40}
+.nav-links{gap:24px}.nav-links>a:not(.btn){font-weight:600;letter-spacing:.01em}
+.brand{letter-spacing:.15em}.brandmark{font-weight:700;font-size:18px;color:#07141e;background:linear-gradient(135deg,#69f0e2,#b390fb);border-radius:10px;width:36px;height:36px;display:grid;place-items:center;font-family:"Space Grotesk";box-shadow:0 0 20px #49dbc840}
+.hero{padding-top:110px}.hero h1{max-width:1100px;letter-spacing:-.062em;line-height:1.07}.hero-copy{line-height:1.7}
+.hero-proof{display:flex;justify-content:center;gap:23px;flex-wrap:wrap;margin:28px auto 0;color:#c1cfe4;font-size:12px}
+.hero-proof span{background:#14233a77;padding:9px 14px;border:1px solid #2f4662;border-radius:50px}
+.hero-proof b{color:#65e8db;font-size:10px;margin-right:9px;letter-spacing:.07em}
+.command-shell{border-radius:22px}.dashboard{border-radius:20px}
+.metric,.panel,.feature,.ex-card,.tour-stage,.creative-card,.brand-lab,.enterprise-visual{box-shadow:inset 0 1px 0 #ffffff08,0 14px 34px #00000015}
+.section h2,.enterprise-hero h1,.tour-rail h2{letter-spacing:-.055em}
+.feature{transition:transform .2s ease,border-color .2s ease,background .2s ease}
+.feature:hover{transform:translateY(-4px);border-color:#67d6d8}
+.feature a,.tab-panel a{font-weight:700}
+.feature a:hover,.tab-panel a:hover{text-decoration:underline}
+.step{position:relative}
+.step:before{content:"";position:absolute;top:-2px;left:0;height:3px;width:48px;background:linear-gradient(90deg,#5beadd,#aa86f6);border-radius:12px}
+.ex-side-button:hover,.tour-steps button:hover{border-color:#65dcd4;background:#20374c}
+.ex-side-button.selected{box-shadow:inset 3px 0 0 #6bede0}
+.ex-shell,.brand-lab{box-shadow:0 25px 80px #01071466,0 0 48px #6653c317}
+.tab:hover:not(.active){border-color:#80c9d2;color:white}
+.tab:focus-visible,.ex-side-button:focus-visible{outline-offset:2px}
+.demo-form{box-shadow:0 16px 50px #0005}
+.demo-form input:hover,.demo-form select:hover,.demo-form textarea:hover,.lab-fields input:hover,.lab-fields select:hover{border-color:#7391aa}
+.brand-preview{box-shadow:0 22px 48px #0005}
+.brand-preview:before{content:"";position:absolute;width:260px;height:260px;border:1px solid color-mix(in srgb,var(--brand-accent) 45%,transparent);border-radius:50%;right:-130px;bottom:-130px;pointer-events:none}
+.brand-preview>*{position:relative}
+.final-gradient{box-shadow:0 16px 60px #05091b90}
+.faq-list summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary:after{content:"+";font-size:24px;color:#6aebdf;font-family:"Space Grotesk"}
+.faq-list details[open] summary:after{content:"−"}
+.faq-list details[open] summary{color:#ecfbff}
+footer{background:#060b15}
+@media(max-width:1000px){.nav-links{gap:14px}.nav-links>a:not(.btn){font-size:12px}}
+@media(max-width:720px){.hero{padding-top:70px}.hero h1{font-size:clamp(40px,9.1vw,60px)}.hero-proof{gap:8px}.hero-proof span{font-size:10px;padding:7px 10px}.nav-links{gap:0}.nav-links>a{padding:12px 4px;border-bottom:1px solid #233752}.nav-links .nav-cta{margin-top:16px}.menu-toggle{min-width:44px;min-height:44px}.btn{min-height:48px}.ex-side-button{min-height:40px}.feature:hover{transform:none}.section h2{line-height:1.12}.hero-copy{line-height:1.65}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
