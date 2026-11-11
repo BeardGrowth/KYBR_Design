@@ -29,13 +29,7 @@
    });
  }));
  const year=document.getElementById('current-year');if(year)year.textContent=String(new Date().getFullYear());
+ // Native Netlify form submission; no client-side interception or misleading mailto draft.
  const form=document.getElementById('growth-form');
- form?.addEventListener('submit',event=>{
-   event.preventDefault();if(!form.reportValidity())return;
-   const f=new FormData(form);
-   const subject='KYBR Growth OS Demo Request — '+String(f.get('company')||'');
-   const body=['Name: '+f.get('name'),'Work email: '+f.get('email'),'Company: '+f.get('company'),'Locations: '+f.get('locations'),'','Goals: '+(f.get('goals')||'(not specified)')].join('\n');
-   put('growth-form-status','Your email application will open with a prepared draft. You must send it yourself; no data was submitted to a CRM.');
-   window.location.href='mailto:hello@kybrmarketing.ai?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
- });
+ form?.addEventListener('submit',()=>{put('growth-form-status','Submitting your demo request…');});
 })();
