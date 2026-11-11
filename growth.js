@@ -33,6 +33,55 @@
   const button=document.querySelector('[data-workspace="'+name+'"]');
   button?.click();
  }));
+
+ // Interactive five-stage workflow: illustrative only, no file uploads or publishing.
+ const workflow=[
+  {title:"Your team sends what it already has.",description:"Photos, short videos and campaign ideas become organized source materials."},
+  {title:"Prepare branded creative drafts.",description:"Use brand instructions to develop copy and creative for the team's review."},
+  {title:"Keep people in control.",description:"Route drafts through the appropriate human review and approval process."},
+  {title:"Plan the next campaign.",description:"Organize approved content for the calendar and supported publishing integrations."},
+  {title:"Learn from the results.",description:"Review activity and outcomes from validated reporting connections."}
+ ];
+ let currentStep=0;
+ const tabs=[...document.querySelectorAll('[data-flow-step]')];
+ const prev=document.getElementById('flow-previous');
+ const next=document.getElementById('flow-next');
+ const panel=document.getElementById('flow-panel');
+ function showWorkflowStep(index,focus){
+  if(!tabs.length) return;
+  currentStep=Math.max(0,Math.min(workflow.length-1,index));
+  tabs.forEach((button,i)=>{
+   const active=i===currentStep;
+   button.setAttribute('aria-selected',String(active));
+   button.tabIndex=active?0:-1;
+   if(active)panel?.setAttribute('aria-labelledby',button.id);
+  });
+  document.querySelectorAll('[data-flow-visual]').forEach((el)=>{
+   const active=Number(el.dataset.flowVisual)===currentStep;
+   el.hidden=!active;
+   el.classList.toggle('active',active);
+  });
+  put('flow-progress','STEP '+(currentStep+1)+' OF '+workflow.length+' · SAMPLE WORKFLOW');
+  put('flow-title',workflow[currentStep].title);
+  put('flow-description',workflow[currentStep].description);
+  if(prev)prev.disabled=currentStep===0;
+  if(next)next.textContent=currentStep===workflow.length-1?'Start over':'Next step';
+  if(focus)tabs[currentStep].focus();
+ }
+ tabs.forEach(tab=>{
+  tab.addEventListener('click',()=>showWorkflowStep(Number(tab.dataset.flowStep),false));
+  tab.addEventListener('keydown',(e)=>{
+   let target=null;
+   if(e.key==='ArrowRight'||e.key==='ArrowDown')target=(currentStep+1)%workflow.length;
+   if(e.key==='ArrowLeft'||e.key==='ArrowUp')target=(currentStep+workflow.length-1)%workflow.length;
+   if(e.key==='Home')target=0;
+   if(e.key==='End')target=workflow.length-1;
+   if(target!==null){e.preventDefault();showWorkflowStep(target,true);}
+  });
+ });
+ prev?.addEventListener('click',()=>showWorkflowStep(currentStep-1,false));
+ next?.addEventListener('click',()=>showWorkflowStep(currentStep===workflow.length-1?0:currentStep+1,false));
+ showWorkflowStep(0,false);
  const year=document.getElementById('current-year');if(year)year.textContent=String(new Date().getFullYear());
  // Native Netlify form submission; no client-side interception or misleading mailto draft.
  const form=document.getElementById('growth-form');
