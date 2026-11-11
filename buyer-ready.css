@@ -1,0 +1,31 @@
+/* KYBR buyer-readiness pass. Editorial rows instead of repetitive boxed dashboard grids. */
+.cinematic-home .buyer-capabilities{padding:105px 0;background:#faf9f7;scroll-margin-top:60px}
+.cinematic-home .buyer-capabilities-heading{display:grid;grid-template-columns:1.15fr .85fr;gap:65px;align-items:end;margin-bottom:35px}
+.cinematic-home .buyer-capabilities-heading h2{font-size:clamp(39px,4.7vw,65px);margin:15px 0 0;letter-spacing:-.068em}
+.cinematic-home .buyer-capabilities-heading h2 em{font-style:normal;color:#088f99}
+.cinematic-home .buyer-capabilities-heading p{font-size:16px;color:#675c6c;line-height:1.75}
+.cinematic-home .buyer-text-link{display:inline-block;color:#442764;text-decoration:none;border-bottom:2px solid #05c4cd;padding-bottom:5px;font-weight:800;font-size:13px;margin-top:10px}
+.cinematic-home .buyer-capability-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 50px;border-top:1px solid #d8d0de}
+.cinematic-home .buyer-capability{display:grid;grid-template-columns:30px 1fr 20px;gap:16px;align-items:start;border-bottom:1px solid #d8d0de;padding:29px 5px;text-decoration:none;min-width:0}
+.cinematic-home .buyer-capability:hover h3{color:#038c96}
+.cinematic-home .buyer-number{color:#8d7b99;font-size:11px;font-weight:900;padding-top:6px}
+.cinematic-home .buyer-capability h3{font-size:clamp(19px,2vw,26px);line-height:1.2;margin:0 0 9px;color:#301a48;letter-spacing:-.045em}
+.cinematic-home .buyer-capability p{font-size:13px;color:#6d6373;margin:0;line-height:1.75}
+.cinematic-home .buyer-direction{color:#05aab4;font-size:18px}
+.cinematic-home .buyer-footnote{font-size:11px;color:#756c79;margin-top:20px}
+.cinematic-home .buyer-faq{padding:105px 0;background:#f0edf4;scroll-margin-top:70px}
+.cinematic-home .buyer-faq-inner{display:grid;grid-template-columns:.75fr 1.25fr;gap:80px;align-items:start}
+.cinematic-home .buyer-faq-intro h2{font-size:clamp(38px,4vw,56px);margin:12px 0 20px}
+.cinematic-home .buyer-faq-intro p{color:#6d6577;font-size:15px}
+.cinematic-home .buyer-faq-list{border-top:1px solid #cfc3d8}
+.cinematic-home .buyer-faq-list details{border-bottom:1px solid #d2c9db;padding:20px 0}
+.cinematic-home .buyer-faq-list summary{font-weight:800;cursor:pointer;font-size:15px;color:#37214f;display:flex;gap:14px;justify-content:space-between;list-style:none}
+.cinematic-home .buyer-faq-list summary::-webkit-details-marker{display:none}
+.cinematic-home .buyer-faq-list summary:after{content:'+';color:#098e99;font-size:21px}
+.cinematic-home .buyer-faq-list details[open] summary:after{content:'−'}
+.cinematic-home .buyer-faq-list details p{font-size:13px;line-height:1.8;color:#655b6e;margin:15px 0 2px}
+.cinematic-home .offer-list .offer{border-top-width:3px}
+.cinematic-home .offer ul{margin:20px 0;padding-left:18px}
+.cinematic-home .offer a:hover,.cinematic-home .buyer-text-link:hover{text-decoration:none;color:#0394a0}
+@media(max-width:800px){.cinematic-home .buyer-capabilities-heading,.cinematic-home .buyer-faq-inner{grid-template-columns:1fr;gap:12px}.cinematic-home .buyer-capability-list{grid-template-columns:1fr}.cinematic-home .buyer-capability{padding:21px 0}}
+@media(max-width:700px){.cinematic-home .buyer-capabilities,.cinematic-home .buyer-faq{padding:72px 0}.cinematic-home .buyer-capabilities-heading h2{font-size:clamp(35px,8vw,49px)}.cinematic-home .buyer-faq-intro h2{font-size:36px}.cinematic-home .buyer-faq-list summary{font-size:14px}}
