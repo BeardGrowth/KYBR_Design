@@ -1,5 +1,7 @@
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
+fs.mkdirSync('test-artifacts',{recursive:true});
 
 const base='http://127.0.0.1:4173';
 const browser=await chromium.launch({headless:true});
@@ -46,6 +48,7 @@ for(const viewport of scenarios){
   await form.locator('input[name="priority"]').first().check();
   assert.equal(await form.evaluate(el=>el.checkValidity()),true,'form validates');
   assert.deepEqual(jsErrors,[],'browser JavaScript errors');
+  if(['mobile-standard','desktop'].includes(viewport.name)) await page.screenshot({path:'test-artifacts/home-'+viewport.name+'.png',fullPage:true});
   console.log('PASS '+viewport.name+' '+JSON.stringify(overflow));
  }catch(e){failures.push(viewport.name+': '+e.message);console.error('FAIL '+viewport.name+': '+e.message);}
  finally{await context.close();}
@@ -56,6 +59,7 @@ for(const file of ['enterprise.html','tour.html','brand-lab.html','crm-outreach.
   const response=await page.goto(base+'/'+file,{waitUntil:'domcontentloaded',timeout:20000});
   assert.equal(response.status(),200,file+' load');
   assert.ok(await page.locator('h1').count()>0,file+' H1');
+  if(file==='enterprise.html')await page.screenshot({path:'test-artifacts/enterprise-desktop.png',fullPage:true});
   console.log('PASS route '+file);
  }catch(e){failures.push(file+': '+e.message);console.error('FAIL '+file+': '+e.message);}
  finally{await page.close();}
