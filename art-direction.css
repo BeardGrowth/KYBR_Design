@@ -1,0 +1,88 @@
+/* KYBR art-direction 2026: editorial hierarchy, immersive product storytelling */
+/* Site still uses existing static HTML + CSS + JS and the verified official wordmark. */
+.kybr-app{background:#fcfbf9;--ink:#220f43;color:#220f43;-webkit-font-smoothing:antialiased}
+.kybr-app .nav{height:84px}
+.kybr-app .nav-shell{border-bottom:1px solid #eae3ef}
+.kybr-app .nav-links{gap:18px}
+.kybr-app .nav-links>a:not(.btn){font-size:12px;color:#48365a}
+.kybr-app .nav-links>a:not(.btn):hover{color:#007e89}
+.kybr-app .btn{border-radius:11px;min-height:49px;padding-inline:22px}
+.kybr-app .btn-primary{background:#220f43}
+.kybr-app .btn-secondary{border-color:#ded3e6}
+.kybr-app .hero-main{display:flex;flex-direction:column;text-align:center;align-items:center;gap:0;padding:84px 0 70px;position:relative}
+.kybr-app .hero-main:before{content:"";position:absolute;z-index:-1;top:0;left:50%;transform:translateX(-50%);height:700px;width:min(1200px,110vw);background:radial-gradient(ellipse at 48% 40%,#f1eafa 0%,#fffaf5 41%,transparent 74%);pointer-events:none}
+.kybr-app .hero-copy{max-width:1040px;display:flex;align-items:center;flex-direction:column}
+.kybr-app .hero-eyebrow{letter-spacing:.15em;font-size:11px;padding:10px 16px}
+.kybr-app .hero-main h1{font-family:"DM Sans",sans-serif;font-size:clamp(54px,7.4vw,110px);font-weight:900;line-height:1.035;letter-spacing:-.079em;max-width:1070px;margin:24px auto}
+.kybr-app .hero-main h1 em{color:#05aeb9}
+.kybr-app .hero-description{max-width:770px;font-size:clamp(16px,1.7vw,20px);line-height:1.65;margin:0 auto;color:#655a6f}
+.kybr-app .hero-description strong{color:#39264f}
+.kybr-app .hero-actions{justify-content:center;gap:12px;margin:28px 0 16px}
+.kybr-app .hero-trustline{display:flex;justify-content:center;flex-wrap:wrap;align-items:center;gap:15px 23px;margin:12px auto 0;font-size:12px;color:#6c6376}
+.kybr-app .hero-check{display:inline-grid;place-items:center;background:#e1f8f6;color:#067781;width:19px;height:19px;border-radius:50%;font-size:11px;margin-right:5px}
+.kybr-app .hero-product{width:min(100%,1150px);padding:28px 32px 18px;margin:56px auto 0;background:linear-gradient(130deg,#e9dbf5,#e7faf7 55%,#ede6f5);border-radius:30px;box-shadow:0 42px 90px #28144525;position:relative}
+.kybr-app .hero-product:before{display:none}
+.kybr-app .hero-window-frame{position:relative;border-radius:18px;overflow:hidden;background:#fff;border:1px solid #dfd5e7;box-shadow:0 34px 65px #2613482e;text-align:left}
+.kybr-app .hero-frame-top{min-height:58px;display:flex;align-items:center;justify-content:space-between;gap:15px;padding:12px 19px;background:#fff;border-bottom:1px solid #eee9f0}
+.kybr-app .hero-frame-logo,.kybr-app .hero-frame-user{display:flex;align-items:center;gap:15px;font-size:10px;color:#82768d;font-weight:700}
+.kybr-app .hero-frame-logo img{display:block;max-width:102px;height:auto}
+.kybr-app .hero-frame-user .hero-online{background:#05c4cd;width:8px;height:8px;border-radius:50%}
+.kybr-app .hero-frame-user span:last-child{color:#c1b8c9}
+.kybr-app .hero-frame-content{display:grid;grid-template-columns:182px 1fr;min-height:490px}
+.kybr-app .hero-frame-nav{background:#220f43;padding:19px 12px;display:flex;flex-direction:column;gap:3px}
+.kybr-app .hero-frame-nav span{color:#d1c1e4;font-size:11px;padding:12px 14px;border-radius:9px}
+.kybr-app .hero-frame-nav .hero-frame-active{color:white;background:#53347b;font-weight:800}
+.kybr-app .hero-frame-stage{padding:29px;min-width:0}
+.kybr-app .hero-frame-header{display:flex;justify-content:space-between;align-items:start;gap:13px}
+.kybr-app .hero-frame-header small{font-size:10px;color:#916fa4;letter-spacing:.12em;font-weight:800}
+.kybr-app .hero-frame-header h3{font-size:clamp(23px,2.4vw,31px);letter-spacing:-.05em;margin:3px 0 4px}
+.kybr-app .hero-frame-header p{font-size:12px;color:#7d7488;margin:0}
+.kybr-app .hero-live-label{font-size:10px;letter-spacing:.06em;color:#087e82;background:#e3f7f5;border-radius:20px;padding:7px 11px;white-space:nowrap}
+.kybr-app .hero-frame-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:22px 0 16px}
+.kybr-app .hero-frame-kpis>div{padding:15px 14px;border:1px solid #ede5f1;border-radius:12px;background:#fffeff;box-shadow:0 6px 13px #220f4307}
+.kybr-app .hero-frame-kpis small,.kybr-app .hero-frame-kpis span{display:block;font-size:10px;color:#8b8092}
+.kybr-app .hero-frame-kpis strong{display:block;font-size:28px;line-height:1.18;color:#220f43;margin:7px 0}
+.kybr-app .hero-frame-kpis span{color:#078c94}
+.kybr-app .hero-frame-bottom{display:grid;grid-template-columns:1.16fr 1fr;gap:12px}
+.kybr-app .hero-frame-chart,.kybr-app .hero-frame-tasks{border:1px solid #eee6f1;border-radius:12px;padding:17px;background:#fff}
+.kybr-app .hero-small-title{display:flex;align-items:center;justify-content:space-between;gap:7px;font-size:12px;font-weight:800;color:#3d2554}
+.kybr-app .hero-small-title span{font-weight:500;color:#8b8490;font-size:10px}
+.kybr-app .hero-frame-chart svg{display:block;width:100%;height:auto;margin:10px 0 0}
+.kybr-app .hero-chart-legend{display:flex;gap:15px;color:#82778b;font-size:10px;justify-content:center}
+.kybr-app .hero-chart-legend span:before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:#05c4cd;margin-right:5px}
+.kybr-app .hero-chart-legend span:last-child:before{background:#8352ad}
+.kybr-app .hero-task-row{display:flex;gap:9px;align-items:center;padding:14px 0;border-bottom:1px solid #f2edf5}
+.kybr-app .hero-task-row:last-child{border-bottom:0}
+.kybr-app .hero-task-row .task-bullet{height:9px;width:9px;flex:none;border-radius:50%}
+.kybr-app .task-bullet.aqua{background:#05c4cd}.kybr-app .task-bullet.purple{background:#9463ba}
+.kybr-app .hero-task-row div{flex:1}
+.kybr-app .hero-task-row strong{font-size:10px;display:block;color:#4c3a5c;font-weight:800}
+.kybr-app .hero-task-row small{color:#91879a;font-size:9px}
+.kybr-app .hero-task-row em{font-size:9px;font-style:normal;color:#0d8e8f;background:#e6f8f7;border-radius:10px;padding:5px 8px}
+.kybr-app .hero-float{display:flex;gap:11px;text-align:left;align-items:center;position:absolute;background:#fff;border:1px solid #ece5f0;border-radius:14px;padding:14px 17px;box-shadow:0 16px 40px #25113e25}
+.kybr-app .hero-float-left{left:-21px;bottom:77px}
+.kybr-app .hero-float-right{right:-15px;top:112px}
+.kybr-app .float-symbol{display:grid;place-items:center;border-radius:9px;background:#dff7f5;color:#007c85;width:36px;height:36px;font-size:22px}
+.kybr-app .float-symbol.purple-bg{color:#62418b;background:#f0e5f7}
+.kybr-app .hero-float b{font-size:12px;display:block;color:#402956}
+.kybr-app .hero-float small{font-size:10px;color:#827589}
+.kybr-app .visual-note{margin:16px auto 0;text-align:center}
+.kybr-app .outcome-strip{background:#fff;border-top:0}
+.kybr-app .outcome-inner{padding:38px 0}
+.kybr-app .section-intro h2{letter-spacing:-.065em}
+.kybr-app .section-intro p{line-height:1.68}
+.kybr-app .visual-feature{transition:transform .25s ease,box-shadow .25s ease}
+.kybr-app .visual-feature:hover{transform:translateY(-5px);box-shadow:0 24px 40px #2510391c}
+.kybr-app .vf-art{height:305px}
+.kybr-app .vf-caption h3{font-size:29px}
+.kybr-app .vf-caption a{color:#4a2672}
+.kybr-app .case-image{height:245px}
+.kybr-app .case-body{padding:25px}
+.kybr-app .case-card{transition:transform .25s ease}
+.kybr-app .case-card:hover{transform:translateY(-4px)}
+.kybr-app .section,.kybr-app .visual-gallery,.kybr-app .case-section{scroll-margin-top:95px}
+.kybr-app .reveal-ready{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.65,.28,1)}
+.kybr-app .reveal-ready.revealed{opacity:1;transform:translateY(0)}
+@media(max-width:900px){.kybr-app .hero-frame-content{grid-template-columns:132px 1fr}.kybr-app .hero-frame-nav span{font-size:9px;padding:11px 8px}.kybr-app .hero-frame-stage{padding:19px}.kybr-app .hero-frame-kpis{gap:6px}.kybr-app .hero-frame-kpis>div{padding:12px 9px}.kybr-app .hero-frame-kpis strong{font-size:22px}.kybr-app .hero-frame-bottom{grid-template-columns:1fr}.kybr-app .hero-float{display:none}}
+@media(max-width:680px){.kybr-app .hero-main{padding-top:65px}.kybr-app .hero-main h1{font-size:clamp(45px,10vw,67px)}.kybr-app .hero-description{font-size:16px}.kybr-app .hero-product{width:100%;padding:10px 9px 14px;border-radius:18px;margin-top:37px}.kybr-app .hero-window-frame{border-radius:12px}.kybr-app .hero-frame-content{display:block}.kybr-app .hero-frame-nav{display:none}.kybr-app .hero-frame-top{padding:10px 12px;min-height:45px}.kybr-app .hero-frame-logo{gap:7px}.kybr-app .hero-frame-logo img{width:75px}.kybr-app .hero-frame-logo span,.kybr-app .hero-frame-user{font-size:8px}.kybr-app .hero-frame-stage{padding:13px}.kybr-app .hero-frame-kpis{grid-template-columns:repeat(2,1fr);gap:7px;margin:15px 0}.kybr-app .hero-frame-kpis>div{padding:10px}.kybr-app .hero-frame-kpis strong{font-size:22px}.kybr-app .hero-frame-kpis small,.kybr-app .hero-frame-kpis span{font-size:9px}.kybr-app .hero-frame-header h3{font-size:22px}.kybr-app .hero-frame-header p{font-size:10px}.kybr-app .hero-live-label{font-size:8px;padding:6px}.kybr-app .hero-frame-chart{display:none}.kybr-app .hero-frame-tasks{padding:13px}.kybr-app .hero-task-row{padding:10px 0}.kybr-app .hero-trustline{gap:8px 13px;font-size:11px}.kybr-app .visual-gallery-grid{gap:18px}.kybr-app .vf-art{height:265px}}
+@media(prefers-reduced-motion:reduce){.kybr-app .reveal-ready{opacity:1;transform:none;transition:none}.kybr-app .visual-feature:hover,.kybr-app .case-card:hover{transform:none}}
