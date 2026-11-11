@@ -28,6 +28,11 @@
       const pill=document.createElement('em');pill.textContent=status;row.append(dot,info,pill);box.appendChild(row);
    });
  }));
+ document.querySelectorAll('[data-workspace-link]').forEach(a=>a.addEventListener('click',()=>{
+  const name=a.dataset.workspaceLink;
+  const button=document.querySelector('[data-workspace="'+name+'"]');
+  button?.click();
+ }));
  const year=document.getElementById('current-year');if(year)year.textContent=String(new Date().getFullYear());
  // Native Netlify form submission; no client-side interception or misleading mailto draft.
  const form=document.getElementById('growth-form');
