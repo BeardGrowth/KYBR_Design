@@ -82,6 +82,16 @@
  prev?.addEventListener('click',()=>showWorkflowStep(currentStep-1,false));
  next?.addEventListener('click',()=>showWorkflowStep(currentStep===workflow.length-1?0:currentStep+1,false));
  showWorkflowStep(0,false);
+ // Preserve the offer the visitor chose when requesting a consultation.
+ const interestInput=document.getElementById('growth-interest');
+ document.querySelectorAll('[data-plan]').forEach(link=>{
+  link.addEventListener('click',()=>{
+   const interest=link.getAttribute('data-plan')||'General Demo';
+   if(interestInput)interestInput.value=interest;
+   const status=document.getElementById('growth-form-status');
+   if(status)status.textContent='Interested in KYBR '+interest+'. Complete the form and submit your request.';
+  });
+ });
  const year=document.getElementById('current-year');if(year)year.textContent=String(new Date().getFullYear());
  // Native Netlify form submission; no client-side interception or misleading mailto draft.
  const form=document.getElementById('growth-form');
