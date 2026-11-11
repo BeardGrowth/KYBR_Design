@@ -1,0 +1,71 @@
+/* Mobile QA corrective layer — explicit sizing, no clipped navigation, no horizontal carousels. */
+html,body{max-width:100%;overflow-x:clip}
+.kybr-app .container{min-width:0}
+.kybr-app *, .kybr-app *::before, .kybr-app *::after{box-sizing:border-box}
+.kybr-app .editorial-workspaces{padding:clamp(64px,8vw,112px) 0;background:#fff}
+.kybr-app .editorial-intro{max-width:760px;margin-bottom:48px}
+.kybr-app .editorial-intro h2{font-size:clamp(35px,4.5vw,64px);line-height:1.08;letter-spacing:-.068em;margin:13px 0 22px}
+.kybr-app .editorial-intro p{font-size:17px;line-height:1.7;color:#685d72;max-width:650px}
+.kybr-app .editorial-story{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:clamp(32px,5vw,85px);padding:28px 0 65px}
+.kybr-app .editorial-story+.editorial-story{border-top:1px solid #eee7ef;padding-top:65px}
+.kybr-app .editorial-story.reverse .editorial-photo{order:2}
+.kybr-app .editorial-photo{position:relative;min-width:0;height:440px;overflow:hidden;border-radius:12px;background:#e9e3ee}
+.kybr-app .editorial-photo img{width:100%;height:100%;display:block;object-fit:cover;object-position:center}
+.kybr-app .photo-tag{position:absolute;bottom:17px;left:18px;padding:10px 14px;background:#fffef8eb;border-radius:6px;color:#382254;font-size:10px;font-weight:900;letter-spacing:.1em}
+.kybr-app .editorial-copy h3{font-size:clamp(33px,3.7vw,51px);line-height:1.08;letter-spacing:-.061em;margin:15px 0 18px}
+.kybr-app .editorial-copy p{color:#6b6376;font-size:16px;line-height:1.75}
+.kybr-app .editorial-process{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:27px 0}
+.kybr-app .editorial-process span{display:flex;align-items:center;justify-content:center;padding:10px 7px;text-align:center;min-height:48px;border:1px solid #e5dbea;background:#f8f5fa;border-radius:7px;font-size:11px;font-weight:800;color:#563675}
+.kybr-app .editorial-link{font-weight:900;font-size:14px;text-decoration:none;color:#4b2874;border-bottom:2px solid #05c4cd;padding-bottom:4px}
+.kybr-app .editorial-link:hover{color:#008c94}
+.kybr-app .demo-shell{min-width:0;max-width:100%;overflow:hidden}
+.kybr-app .demo-nav button{white-space:normal;line-height:1.3}
+.kybr-app .demo-stage{min-width:0}
+.kybr-app .demo-topline h3{line-height:1.15}
+.kybr-app .demo-kpi{min-width:0}
+.kybr-app .activity-item{min-width:0}
+.kybr-app .activity-item>div{min-width:0}
+.kybr-app .activity-item b,.kybr-app .activity-item small{overflow-wrap:anywhere}
+.kybr-app .activity-item em{white-space:nowrap}
+.kybr-app .case-card,.kybr-app .delivery-card,.kybr-app .onboard-grid article{min-width:0}
+@media(max-width:1050px){.kybr-app .hero-main h1{max-width:850px}.kybr-app .editorial-photo{height:360px}}
+@media(max-width:760px){
+  .kybr-app .hero-main{padding-top:50px}
+  .kybr-app .hero-main h1{font-size:clamp(38px,9.2vw,60px);line-height:1.08;letter-spacing:-.065em}
+  .kybr-app .hero-description{font-size:16px;line-height:1.7}
+  .kybr-app .hero-actions{width:100%}
+  .kybr-app .hero-actions .btn{flex:1 1 190px}
+  .kybr-app .hero-product{margin-top:31px}
+  .kybr-app .section-intro h2{font-size:clamp(32px,8vw,44px);line-height:1.15}
+  .kybr-app .section-intro p{font-size:15px;line-height:1.7}
+  .kybr-app .demo-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;overflow:visible;white-space:normal;padding:12px;background:#220f43}
+  .kybr-app .demo-nav button{display:flex;align-items:center;justify-content:center;min-height:44px;margin:0;text-align:center;white-space:normal;font-size:12px;border:1px solid #5f487e;border-radius:8px;background:#321b52;color:#f2eafb;padding:9px 6px}
+  .kybr-app .demo-nav button.selected{background:#eee7f5;color:#220f43;border-color:#eee7f5}
+  .kybr-app .demo-nav button:hover{background:#594278;color:white}
+  .kybr-app .demo-stage{padding:20px 15px}
+  .kybr-app .demo-topline h3{font-size:clamp(25px,6.8vw,33px);line-height:1.16}
+  .kybr-app .demo-topline p{font-size:14px}
+  .kybr-app .demo-kpis{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+  .kybr-app .demo-kpi{padding:11px 8px;min-width:0}
+  .kybr-app .demo-kpi b{font-size:22px}
+  .kybr-app .demo-kpi small{font-size:10px;overflow-wrap:anywhere}
+  .kybr-app .activity-board{border-radius:10px}
+  .kybr-app .activity-item{display:grid;grid-template-columns:7px minmax(0,1fr);gap:9px;align-items:center}
+  .kybr-app .activity-item em{grid-column:2;justify-self:start;padding:4px 9px;font-size:10px}
+  .kybr-app .editorial-intro{margin-bottom:26px}
+  .kybr-app .editorial-intro h2{font-size:clamp(32px,8vw,45px)}
+  .kybr-app .editorial-intro p{font-size:15px}
+  .kybr-app .editorial-story,.kybr-app .editorial-story.reverse{display:flex;flex-direction:column;gap:24px;padding:0 0 48px;align-items:stretch}
+  .kybr-app .editorial-story+.editorial-story{padding-top:48px}
+  .kybr-app .editorial-story.reverse .editorial-photo{order:0}
+  .kybr-app .editorial-photo{height:auto;aspect-ratio:4/3;width:100%}
+  .kybr-app .editorial-copy h3{font-size:clamp(32px,8vw,43px)}
+  .kybr-app .editorial-copy p{font-size:15px}
+  .kybr-app .editorial-process{margin:21px 0;grid-template-columns:1fr}
+  .kybr-app .editorial-process span{min-height:37px;justify-content:flex-start;padding:9px 13px}
+  .kybr-app .hero-frame-top{overflow:hidden}
+  .kybr-app .hero-frame-user{display:none}
+}
+@media(max-width:390px){.kybr-app .demo-nav{gap:5px;padding:10px}.kybr-app .demo-nav button{font-size:11px;padding:8px 4px}.kybr-app .demo-stage{padding:15px 11px}.kybr-app .hero-frame-kpis strong{font-size:18px}}
+/* Disable the previous reveal effect, which can create blank areas when scrolling. */
+.kybr-app .reveal-ready,.kybr-app .reveal-ready.revealed{opacity:1!important;transform:none!important;transition:none!important}
