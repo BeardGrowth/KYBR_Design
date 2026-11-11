@@ -1,0 +1,6 @@
+/* KYBR supplied official logo: #220f43 + #05c4cd */
+.kybr-app .logo,body .brand{display:inline-flex;align-items:center;gap:0;letter-spacing:normal;text-decoration:none}
+.official-kybr-logo{width:160px;height:auto;max-width:100%;display:block;object-fit:contain;flex:none}
+.kybr-app footer .logo,body footer .brand{background:#fff;border-radius:9px;padding:8px 12px;width:max-content;max-width:100%}
+.kybr-app footer .official-kybr-logo,body footer .official-kybr-logo{width:141px}
+@media(max-width:760px){.official-kybr-logo{width:136px}.kybr-app footer .official-kybr-logo,body footer .official-kybr-logo{width:130px}}
