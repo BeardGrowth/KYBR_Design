@@ -23,14 +23,14 @@ Existing Netlify continuous deployment should publish new pushes when configured
 - All enterprise metrics, locations, reports and campaign examples are **fictional demonstration values**, not customer results.
 - The Enterprise Command Center and guided tour are front-end concepts, not connected to live KYBR software, integrations, users, publishing or databases.
 - The brand lab creates a **browser-only template-driven mockup**. An optional uploaded logo stays in the visitor's browser session; it is not uploaded. It does not call an AI generation model. True AI-generated design, copy and asset transformation would require a secure backend, an approved model/integration, consent and suitable retention/privacy handling.
-- The contact form opens a `mailto:` draft addressed to `hello@kybrmarketing.ai`; verify that mailbox is monitored before launch. It is not a delivered message, CRM submission, or scheduling integration.
+- The homepage form is now a native Netlify Forms POST (`kybr-demo`) that redirects to `thank-you.html` on successful processing. Form detection, receipt, spam filtering, notification routing, follow-up ownership, and a real test submission must be verified in Netlify before launch. There is no confirmed booking integration or CRM submission.
 - Product claims, role security, tenant isolation, privacy, AI capabilities and performance outcomes need to be confirmed before commercial use.
 
 ## Prelaunch checklist
 
 1. Verify official KYBR logo and licensed brand assets.
-2. Connect a real lead capture and scheduling service.
+2. Confirm native Netlify Forms is enabled, perform an end-to-end test submission and verify notification delivery. Add scheduling only after the actual booking URL is available.
 3. Replace all mock numbers with verified facts or leave them labeled as examples.
 4. Test the live Netlify pages on iPhone and desktop, including role selector, tabs, tour buttons, local logo preview and contact workflow.
 5. Validate accessibility, privacy and security, including file upload behavior.
-6. Set up analytics, SEO metadata, legal pages and accurate product disclosures.
+6. Approve privacy/legal disclosures, configure analytics, production SEO and accurate product disclosures.
