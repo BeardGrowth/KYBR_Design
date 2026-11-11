@@ -14,7 +14,7 @@
   };
   sidebarButtons.forEach(b=>b.addEventListener('click',()=>setScreen(b.dataset.screen)));
   const role=document.getElementById('role-filter');
-  const roleStats={corporate:['44','18','7','146'],regional:['12','8','3','48'],local:['1','3','1','12']};
+  const roleStats={corporate:['12','18','7','146'],regional:['12','8','3','48'],local:['1','3','1','12']};
   role?.addEventListener('change',()=>{
     ['ex-locations','ex-campaigns','ex-approvals','ex-tasks'].forEach((id,i)=>{const el=document.getElementById(id);if(el)el.textContent=roleStats[role.value][i];});
   });
