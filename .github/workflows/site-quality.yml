@@ -24,6 +24,14 @@ jobs:
           python3 -m http.server 4173 --bind 127.0.0.1 >/tmp/kybr-preview.log 2>&1 &
           sleep 2
           node scripts/browser-smoke.mjs
+      - name: Probe Netlify staging deployment (diagnostic, non-blocking)
+        continue-on-error: true
+        run: |
+          status=$(curl --location --silent --show-error --max-time 20 --output /tmp/kybr-netlify.html --write-out '%{http_code}' https://newkybr.netlify.app/ || true)
+          echo "Netlify staging HTTP status: $status"
+          test "$status" = "200"
+          grep -q 'home.bundle.css' /tmp/kybr-netlify.html
+          echo "Netlify page contains the latest stylesheet marker."
       - name: Save mobile and desktop QA screenshots
         if: always()
         uses: actions/upload-artifact@v4
