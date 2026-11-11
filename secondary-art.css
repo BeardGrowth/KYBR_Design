@@ -1,0 +1,47 @@
+/* Align secondary feature pages with the flagship KYBR editorial redesign */
+body{background:#fcfbf9;color:#220f43}
+.site-header{background:#fffefdec;border-color:#eae3ef}
+.brand,.nav-links>a:not(.btn){color:#45315e}
+.eyebrow{color:#704697}
+.enterprise-hero h1 em,.gradient-text{background:linear-gradient(95deg,#008f9a,#6b48a3);background-clip:text;-webkit-background-clip:text;color:transparent}
+.pill{background:#f1ebf8;border-color:#e1d4ed;color:#674184}
+.enterprise-hero{padding-top:88px}
+.enterprise-hero h1{font-size:clamp(44px,6vw,78px);letter-spacing:-.073em}
+.enterprise-hero>p:not(.eyebrow):not(.micro){color:#625c6d;line-height:1.75}
+.btn-primary{background:#220f43;color:white;border:1px solid #220f43;box-shadow:0 12px 27px #220f4324}
+.btn-primary:hover{background:#42246d}
+.btn-outline{border:1px solid #dacde5;color:#3d2458;background:white}
+.btn-outline:hover{background:#f4edf9}
+.experience-heading h2,.section h2,.tour-rail h2{letter-spacing:-.062em;color:#220f43}
+.experience-heading p:not(.eyebrow),.section-lede{color:#6d6477}
+.ex-shell,.tour-stage,.brand-lab{box-shadow:0 24px 60px #220f4315;border-radius:20px}
+.ex-shell{border-color:#d7c6e7}
+.ex-toolbar{background:#241142}
+.ex-side{background:#241142}
+.ex-side-button.selected{background:#523275;box-shadow:inset 3px 0 0 #05c4cd}
+.ex-stage{background:#fcfbfe}
+.ex-stage h3,.ex-stage .eyebrow{color:#3b2253}
+.ex-card{background:white;border-color:#e7dfee;color:#321e49}
+.ex-card h4,.ex-card strong{color:#321e49}
+.ex-kpis>div{background:#f9f7fc;border-color:#e5dcec}
+.ex-kpis strong{color:#321e49}
+.ex-kpis small{color:#776d81}
+.ex-kpis span{color:#0d929d}
+.ex-info{background:#f4eff8;border-color:#e1d5e9;color:#655673}
+.queue-item,.campaign-line,.location-record{border-color:#eee6f1}
+.queue-item strong,.campaign-line strong,.location-record strong{color:#392454}
+.queue-item small,.campaign-line small,.location-record small{color:#786b85}
+.approval-creative{background:radial-gradient(circle at 85% 15%,#8f66c5,transparent 55%),linear-gradient(135deg,#311c56,#1f4352);border-color:#80619f}
+.approval-creative h4,.approval-creative h4 em,.approval-creative p{color:white}
+.tour-rail .tour-steps button{border-color:#e3d9eb}
+.tour-rail .tour-steps button.active{background:#eee6f7;border-color:#ba9cd0;color:#351f52}
+.brand-lab{background:white}
+.brand-preview{box-shadow:0 25px 55px #220f4327}
+.final-gradient{background:linear-gradient(130deg,#220f43,#463078);border-color:#220f43}
+.final-gradient h2,.final-gradient p{color:white}
+.final-gradient .eyebrow{color:#72d8e0}
+.rollout-grid article{background:white}
+.rollout-grid article>span{color:#0a99a3}
+footer{background:#190b30;color:white}
+footer .footer-links a{color:#d6c8e6}
+@media(max-width:720px){.enterprise-hero{padding-top:58px}.ex-stage{padding:14px}.ex-toolbar{background:#241142}.ex-stage-head h3{color:#392454}.tour-stage{padding:16px}}
